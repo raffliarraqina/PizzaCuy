@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PizzaCuy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/pp.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <h2>Pizza<span style="color:#bc4749;">Cuy</span></h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chef">Chef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservasi">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#maps">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pizza.html">Pizza</a></li>
+                            <li><a class="dropdown-item" href="pasta.html">Pasta</a></li>
+                            <li><a class="dropdown-item" href="sauce.html">Sauce</a></li>
+                            <li><a class="dropdown-item" href="drink.html">Drink</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/pizza1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Pizza</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/pasta6.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Pasta & Spaghetti</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/sauce5.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Sauce</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/d1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Drink</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end carousel -->
+
+    <!-- about -->
+    <div class="container mt-5" id="about">
+        <h1 class="text-center mb-0">About</h1>
+        <p class="text-center mb-0 mt-0" style="color: #bc4749;">All About PizzaCuy</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/img/pizza5.png" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-6">
+                <h5 style="display: flex; justify-content: center;" class="text-danger">Our Brand Vision</h5>
+                <p>To be the favourite casual dining place for families and friends to gather for great food and great
+                    time together, as it is affordable and offers a memorable service experience that makes one wants to
+                    return.</p>
+                <h5 style="display: flex; justify-content: center;" class="text-danger">Our Passion</h5>
+                <p>Starting in 1969 with our first outlet at Jalan Sukuh Cottage, <span
+                        class="text-danger">PizzaCuy</span> is now the largest pizza chain restaurant with 109 outlets.
+                    We have an unparalleled passion for celebrating our pizza. We aim to provide not only a wide variety
+                    of quality pizzas, pasta and other foods that are always fresh, but also a fun and friendly relaxed
+                    atmosphere. All this without compromising what a good restaurant always stands for customer service
+                    and satisfaction.</p>
+                <p>Over the years, our service, menu offerings and ambiance have evolved with the times and trends.
+                    Since then, we have embraced the concept of affordable casual dining with an emphasis on creating a
+                    fun and engaging atmosphere for our customers. <span class="text-danger">PizzaCuy</span> is a
+                    favorite place if you want to celebrate a special occasion, or just chill with friends and loved
+                    ones. We aim to make every dining experience a truly memorable one for our customers.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- menu -->
+    <div class="container mt-5" id="menu">
+        <h1 class="text-center mb-0">Menu</h1>
+        <p class="text-center mb-10 mt--10" style="color: #bc4749;">All Menu PizzaCuy</p>
+        <div class="row mt-4">
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 15rem;">
+                    <img src="/assets/img/pizza6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">All Pizza menus</p>
+                        <a href="pizza.html" class="btn btn-danger">See All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 15rem;">
+                    <img src="/assets/img/pasta.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pasta</h5>
+                        <p class="card-text">All Pasta Menus</p>
+                        <a href="pasta.html" class="btn btn-danger">See All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 15rem;">
+                    <img src="/assets/img/sauce.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sauce</h5>
+                        <p class="card-text">All Sauce Menus</p>
+                        <a href="sauce.html" class="btn btn-danger">See All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 15rem;">
+                    <img src="/assets/img/drink.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Drink</h5>
+                        <p class="card-text">All Drink Menus</p>
+                        <a href="drink.html" class="btn btn-danger">See All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end menu -->
+
+    <!-- chef -->
+    <div class="container mt-5" id="chef">
+        <h1 class="text-center mb-0">Chef</h1>
+        <p class="text-center mb-10 mt--10" style="color: #bc4749;">All Chefs</p>
+        <div class="row mt-4">
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/img/chef1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef Juna</h5>
+                        <p class="card-text">He is an Indonesian Master Chef Judge and a former Indonesian master chef
+                            champion. Famous for scary and tattoos.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-danger">Master Chef</li>
+                        <li class="list-group-item">Taster</li>
+                        <li class="list-group-item">Cook</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter text-danger"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook text-danger"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram text-danger"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/img/chef2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef Bobon</h5>
+                        <p class="card-text">He is the number 1 Best and Greatest Chef in the universe. It's famous for
+                            its absurd cooking and it's famous for its weirdness.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-danger">Master Chef</li>
+                        <li class="list-group-item">Main Chef</li>
+                        <li class="list-group-item">Cook</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter text-danger"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook text-danger"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram text-danger"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/img/chef3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef Tretan</h5>
+                        <p class="card-text">He is a great Chef even called as LORD in lost realm. Known for his shabby
+                            cooking and for being an enemy of society & the government.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-danger">Patissier</li>
+                        <li class="list-group-item">Waiter</li>
+                        <li class="list-group-item">Cook</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter text-danger"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook text-danger"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram text-danger"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-2 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/img/chef4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef Arnold</h5>
+                        <p class="card-text">The Greatest and Most Helped Chef, has the characteristics of very good
+                            cooking. Famous for Indonesian Master Chef Jury and former Champion.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-danger">Master Chef</li>
+                        <li class="list-group-item">Taster</li>
+                        <li class="list-group-item">Cook</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter text-danger"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook text-danger"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram text-danger"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end chef -->
+
+    <!-- reservation -->
+    <div class="container mt-5" id="reservasi">
+        <h1 class="text-center mb-0">Reservation</h1>
+        <p class="text-center mb-10 mt--10" style="color: #bc4749;">Book a Table</p>
+
+        <section id="book-a-table" class="book-a-table">
+            <div class="container">
+
+                <div class="row g-0">
+
+                    <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservasi.avif);"></div>
+
+                    <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+                        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+                            <div class="row gy-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" name="name" class="form-control text-danger" id="name"
+                                        placeholder="Your Name" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars">
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="email" class="form-control text-danger" name="email" id="email"
+                                        placeholder="Your Email" data-rule="email"
+                                        data-msg="Please enter a valid email">
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" class="form-control text-danger" name="phone" id="phone"
+                                        placeholder="Your Phone" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars">
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" name="date" class="form-control text-danger" id="date" placeholder="Date"
+                                        data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="text" class="form-control text-danger" name="time" id="time" placeholder="Time"
+                                        data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="number" class="form-control text-danger" name="people" id="people"
+                                        placeholder="# of people" data-rule="minlen:1"
+                                        data-msg="Please enter at least 1 chars">
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control text-danger" name="message" rows="5" placeholder="Message"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your booking request was sent. We will call back or send an
+                                    Email to confirm your reservation. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button class="btn btn-danger">Book a Table</button></div>
+                        </form>
+                    </div><!-- End Reservation Form -->
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- end reservation -->
+
+    <!-- maps -->
+    <div class="container mt-5" id="maps">
+        <h1 class="text-center mb-10">Maps</h1>
+        <p class="text-center mb-10 mt--10" style="color: #bc4749;">Visit Us</p>
+        <div class="row-fluid">
+            <div class="mt-2 d-flex justify-content-center align-items-center">
+                <iframe width="1200px" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2013741.0546455614!2d110.11890757216653!3d-6.956746176151404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slaut!5e0!3m2!1sid!2sid!4v1670248567402!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- end maps -->
+
+    <!-- contact -->
+    <div class="container mt-5" id="contact">
+        <h1 class="text-center mb-0">Contact</h1>
+        <p class="text-center mb-10 mt--10" style="color: #bc4749;">Contact Us</p>
+
+        <section class="contact">
+            <div class="container isian dalam mb-3 ">
+                <div class="info-wrap ">
+                    <div class="row">
+                        <div class="col-lg-4 info justify-content-start">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4 class="text-danger">Location:</h4>
+                            <p>Sukuh, Karangpandan<br>Karanganyar, SL 40982</p>
+                        </div>
+
+                        <div class="col-lg-4 info mt-4 mt-lg-0">
+                            <i class="bi bi-envelope"></i>
+                            <h4 class="text-danger">Email:</h4>
+                            <p>raffliarraqina77@gmail.com<br>pizzacuy@gmail.com</p>
+                        </div>
+
+                        <div class="col-lg-4 info mt-4 mt-lg-0 justify-content-end">
+                            <i class="bi bi-phone"></i>
+                            <h4 class="text-danger">Call:</h4>
+                            <p>+62 821 8973 4169<br>+62 869 8756 3209</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container isian dalam text-center">
+
+                <div class="row ">
+                    <div class="col text-start">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Name">
+                    </div>
+                    <div class="col text-end">
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email address">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Subject">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <input type="text" class="form-control komen" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Message">
+                    </div>
+
+                </div>
+                <button type="button" class="btn btn-danger mt-3">Send Message</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- end contact -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-geo-alt icon"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>
+                            Sukuh, Karangpandan <br>
+                            Karanganyar, SL 40982 - IDN<br>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links d-flex">
+                    <i class="bi bi-telephone icon"></i>
+                    <div>
+                        <h4>Reservations</h4>
+                        <p>
+                            <strong>Phone:</strong> +62 821 89734169<br>
+                            <strong>Email:</strong> pizzacuy@gmail.com<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links d-flex">
+                    <i class="bi bi-clock icon"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>
+                            <strong>Mon-Sat:</strong> 9AM - 24PM<br>
+                            <strong>Sunday:</strong> 24 Hours<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-links d-flex">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-telegram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>PizzaCuy</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+                Designed by <a href="https://arraqina.netlify.app/" target="_blank">Raffli Arraqina</a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
